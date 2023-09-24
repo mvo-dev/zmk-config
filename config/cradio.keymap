@@ -11,7 +11,6 @@
 #define NUMBER 4
 #define SETTING 5
 
-
 / {
     macros {
         del_word: delete_word {
@@ -83,7 +82,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                           │  EXT     │  SHIFT   │   │  SPACE   │  SYM     │
+        //                                 │  EXT     │  SHIFT   │   │  SPACE   │  SYM     │
                                             &mo EXTEND &kp LSHIFT     &kp SPACE  &num_morph
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
