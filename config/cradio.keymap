@@ -156,13 +156,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│BOOTLOADER│          |          │ BLT CLEAR│ BLT 0    │   | BLT 3    │          │          │          │BOOTLOADER│
-           &bootloader &trans     &trans     &BT_CLR    &BT_SEL 0     &BT_SEL 3    &trans     &trans      &trans    &bootloader
+           &bootloader &trans     &trans     &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 3   &trans    &trans   &trans    &bootloader
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │ BLT 1    │   │ BLT 4    │          │          │          │          │
-            &trans    &trans     &trans      &trans     &BT_SEL 1     &BT_SEL 4     &trans     &trans      &trans     &trans
+            &trans    &trans     &trans      &trans    &bt BT_SEL 1  &bt BT_SEL 4  &trans     &trans   &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │ BLT 2    │   │ BLT 5    │          │          │          │          │
-            &trans    &trans     &trans      &trans     &BT_SEL 2     &BT_SEL 5      &trans    &trans      &trans     &trans
+            &trans    &trans     &trans      &trans    &bt BT_SEL 2  &bt BT_SEL 5   &trans    &trans   &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
