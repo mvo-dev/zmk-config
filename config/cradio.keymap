@@ -5,9 +5,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-// Home row mods macro
-#define HRML(k1,k2,k3) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3
-#define HRMR(k1,k2,k3) &ht RCTRL k1  &ht RALT k2  &ht RSHFT k3
+#define EXTEND 1
+#define SYMBOL 2
+#define FUNC 3
+#define NUMBER 4
+#define SETTING 5
+
 
 / {
     macros {
@@ -45,23 +48,24 @@
     };
 
     behaviors {
-        ht: hold_tap {
-            label = "hold_tap";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
+        num_morph: num_layer_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "num_layer_morph";
+            #binding-cells = <0>;
+            bindings = <&mo SYMBOL>, <&mo NUMBER>;
+            mods = <(MOD_LSFT)>;
+        };   
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+        function_layer {
+            if-layers = <EXTEND SYMBOL>;
+            then-layer = <FUNC>;
+        };
+        settings_layer {
+            if-layers = <EXTEND NUMBER>;
+            then-layer = <SETTING>;
         };
     };
 
@@ -80,7 +84,7 @@
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            │  EXT     │  SHIFT   │   │  SPACE   │  SYM     │
-                                            &mo 1      &kp LSHIFT     &kp SPACE  &mo 2
+                                            &mo EXTEND &kp LSHIFT     &kp SPACE  &num_morph
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
