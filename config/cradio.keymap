@@ -14,8 +14,8 @@
 / {
     macros {
         del_word: delete_word {
-            label: "delete_word";
             compatible = "zmk,behavior-macro";
+            label: "ZM_delete_word";
             #binding-cells = <0>;
             bindings 
                 = <&macro_press &kp LCTRL>
@@ -23,8 +23,8 @@
                 , <&macro_release &kp LCTRL>;
         };
         s_copy: shift_copy {
-            label: "shift_copy";
             compatible = "zmk,behavior-macro";
+            label: "ZM_shift_copy";
             #binding-cells = <0>;
             bindings 
                 = <&macro_press &kp LCTRL>
@@ -34,8 +34,8 @@
                 , <&macro_release &kp LCTRL>;
         };
         s_paste: shift_paste {
-            label: "shift_paste";
             compatible = "zmk,behavior-macro";
+            label: "ZM_shift_paste";
             #binding-cells = <0>;
             bindings 
                 = <&macro_press &kp LCTRL>
