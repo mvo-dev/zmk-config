@@ -92,7 +92,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│ ESC      │ BACK     │  FIND    │ FORWARD  │ INSERT   │   │ PAGE UP  │ HOME     │ UP       │ END      │ CAPS     │
-            &kp ESC   &kp K_BACK &kp K_FIND &kp K_FORWARD &kp INS     &kp PGUP   &kp HOME   &kp URAW   &kp END    &kp CAPS
+            &kp ESC   &kp K_BACK &kp K_FIND &kp K_FORWARD &kp INS     &kp PGUP   &kp HOME   &kp UARW   &kp END    &kp CAPS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ ALT      │ WIN      │ SHIFT    │ CTRL     │ ALT GR   │   │ PAGE DOWN│ LEFT     │ DOWN     │ RIGHT    │ DELETE   │
             &sk LALT  &sk LWIN   &sk LSHIFT &sk LCTRL  &sk RALT        &kp PGDN   &kp LARW   &kp DARW   &kp RARW   &kp DEL
@@ -143,13 +143,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          |          │          │          │   | =        │ 7        │ 8        │ 9        │ +        │
-           &trans     &trans     &trans     &trans     &trans         &kp EQL    &kp 7       &kp 8      &kp 9      &kp PLUS
+           &trans     &trans     &trans     &trans     &trans         &kp EQL    &kp N7      &kp N8     &kp N9    &kp PLUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ ALT      │ WIN      │ SHIFT    │ CTRL     │ ALT GR   │   │ *        │ 4        │  5       │  6       │ -        │
-            &sk LALT  &sk LWIN   &sk LSHIFT &sk LCTRL  &sk RALT       &kp ASTRK   &kp 4       &kp 5      &kp 6     &kp MINUS
+            &sk LALT  &sk LWIN   &sk LSHIFT &sk LCTRL  &sk RALT       &kp ASTRK   &kp N4     &kp N5     &kp N6     &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │ TAB      │ BACKSPACE│ ENTER    │   │ 0        │  1       │  2       │  3       │ /        │
-            &trans    &trans     &kp TAB     &kp BSPC  &kp ENTER       &kp 0      &kp 1     &kp 2       &kp 3      &kp FLSH
+            &trans    &trans     &kp TAB     &kp BSPC  &kp ENTER       &kp N0    &kp N1     &kp N2      &kp N3      &kp FLSH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
