@@ -145,7 +145,7 @@
             &sk LALT  &sk LWIN   &sk LSHIFT &sk LCTRL  &sk RALT       &kp ASTRK   &kp N4     &kp N5     &kp N6     &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │ TAB      │ BACKSPACE│ ENTER    │   │ 0        │  1       │  2       │  3       │ /        │
-            &trans    &trans     &kp TAB     &kp BSPC  &kp ENTER       &kp N0    &kp N1     &kp N2      &kp N3      &kp FLSH
+            &trans    &trans     &kp TAB     &kp BSPC  &kp ENTER       &kp N0    &kp N1     &kp N2      &kp N3      &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans    &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
