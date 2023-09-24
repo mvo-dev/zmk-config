@@ -42,7 +42,7 @@
                 , <&macro_release &kp LSHIFT>
                 , <&macro_release &kp LCTRL>;
         };
-    }
+    };
 
     behaviors {
         ht: hold_tap {
