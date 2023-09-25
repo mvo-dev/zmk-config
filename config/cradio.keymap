@@ -76,9 +76,9 @@
                 , <&macro_tap &kp TAB>
                 , <&macro_release &kp LCTRL>;
         };
-        prev_tab: delete_word {
+        prev_tab: prev_tab {
             compatible = "zmk,behavior-macro";
-            label = "del_word";
+            label = "prev_tab";
             #binding-cells = <0>;
             bindings 
                 = <&macro_press &kp LCTRL>
